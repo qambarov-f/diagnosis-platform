@@ -5,10 +5,10 @@ import Style from "./Header.module.css";
 const Header = () => {
   return (
     <div className={Style.navBar}>
-      <button className={Style.logo}>
+      <a href="/" className={Style.logo}>
         {" "}
         <img src={Logo} alt="" />{" "}
-      </button>
+      </a>
 
       <a href="home">Ana Səhifə</a>
       <a href="about">Haqqımızda</a>
