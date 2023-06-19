@@ -1,17 +1,11 @@
 import styled from "styled-components";
-{
-  /* <style>@import url('https://fonts.cdnfonts.com/css/poppins');</style>; */
-}
-                
-
-
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-`; 
+`;
 
 export const Button = styled.button`
   background: ${(props) => (props.$primary ? "#12AFB6" : "none")};
@@ -32,7 +26,7 @@ export const Button = styled.button`
 export const Image = styled.img`
   height: 310px;
   width: 310px;
-`; 
+`;
 
 export const Title = styled.h4`
   font-family: "Poppins", sans-serif;
@@ -44,12 +38,12 @@ export const Title = styled.h4`
 `;
 
 export const Title2 = styled.h6`
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-`
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+`;
 export const ImageCrc = styled.img`
   position: absolute;
   left: 260px;
