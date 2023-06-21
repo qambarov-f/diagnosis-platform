@@ -12,6 +12,7 @@ import signPhoto from "../../../images/signin.svg";
 import spiral from "../../../images/shape4.svg"
 import circle from "../../../images/circle.svg";
 import circleSm from "../../../images/circle.svg";
+import styled from "styled-components";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -54,7 +55,7 @@ const Login = () => {
       }}
     >
       {({ isSubmitting }) => (
-        <div>
+        <div className={Styled.containerDiv}>
           <Form className={Styled.container}>
             <h1 className={Styled.title}>Xoş gəlmisiniz! </h1>
             <h4 className={Styled.titlesm}>

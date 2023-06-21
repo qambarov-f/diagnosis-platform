@@ -4,9 +4,16 @@
     justify-content: center;
     align-items: center;
     left: 300px;
-    width: 490px;
+    width: 450px;
     margin-top: 35px;
     position: relative;
+    margin-bottom: 0;
+}
+
+.containerDiv{
+    position: relative;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 .email {
     border: 1.6px solid #12AFB6;
@@ -156,17 +163,19 @@
 .atom{
     width: 70px;
     height: 70px;
-    left: 220px;
-    top: 450px;
-    position: absolute;
+    left: -180px;
+    top: -300px;
+    /* position: absolute; */
+    position: relative;
 }
 
 .spiral{
     width: 200px;
     height: 200px;
-    left: -60px;
-    top: 100px;
-    position: absolute;
+    left: -920px;
+    top: -550px;
+    /* position: absolute; */
+    position: relative;
     transition: all ease-in-out 800ms;
 }
 
@@ -178,8 +187,8 @@
     position: absolute;
     width: 70px;
     height: 70px;
-    right: 280px;
-    top: 200px;
+    right: 290px;
+    top: 50px;
     transition: all ease-in-out 800ms;
 }
 
@@ -188,11 +197,12 @@
 }
 
 .circleSm{
-    position: absolute;
+    /* position: absolute; */
+    position: relative;
     width: 50px;
     height: 50px;
-    right: 340px;
-    top: 130px;
+    right: -20px;
+    top: -650px;
     transition: all ease-in-out 800ms;
 }
 
@@ -201,9 +211,10 @@
 }
 
 .signPhoto{
-    position: absolute;
-    right: 350px;
-    top: 26%;
+    /* position: absolute; */
+    position: relative;
+    right: -270px;
+    top: -390px;
     width: 420px;
     height: 420px;
     transition: all ease 1000ms;

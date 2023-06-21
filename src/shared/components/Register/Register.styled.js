@@ -15,6 +15,7 @@ export const Button = styled.button`
   width: 200px;
   height: 50px;
   font-size: 18px;
+  position: relative;
   margin: 10px;
   transition: all ease 500ms;
   :hover {
