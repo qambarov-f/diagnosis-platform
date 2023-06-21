@@ -1,11 +1,16 @@
+
 .App {
   text-align: center;
+<<<<<<< HEAD
   /* display: flex;
     flex-direction: column; */
+=======
+>>>>>>> efd034b3818186807060332477b3c81215a06707
 
 }
 *{
   background: #C9E8EB;
+  box-sizing: border-box;
   margin: 0;
     padding: 0;
 }
