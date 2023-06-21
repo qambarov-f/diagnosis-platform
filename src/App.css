@@ -1,8 +1,11 @@
+
 .App {
   text-align: center;
+
 }
 *{
   background: #C9E8EB;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }

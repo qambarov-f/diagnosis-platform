@@ -2,7 +2,8 @@ import './App.css';
 import Footer from './shared/components/Footer/Footer';
 import Header from "./shared/components/Header/Header";
 // import Register from "./shared/components/Register";
-import Login from "./shared/components/Login";
+// import Login from "./shared/components/Login";
+import Registration from './shared/components/Registration';
 
 
 function App() {
@@ -10,9 +11,9 @@ function App() {
     <div className="App">
       <Header />
 
-      <h1>salam</h1>
       {/* <Register /> */}
-      <Login />
+      <Registration/>
+      {/* <Login /> */}
       <Footer />
     </div>
   );
