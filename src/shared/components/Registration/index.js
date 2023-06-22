@@ -1,12 +1,26 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import { IoIosEye, IoIosEyeOff } from "react-icons/io";
 import Styled from "./Registration.module.css";
-class Registration extends Component {
+// import { FcGoogle } from "react-icons/fc";
+// import { useGoogleLogin } from '@react-oauth/google';
+// import axios from "axios";
 
-    render() {
-        return (
-            <>
-                <h1>Registration</h1>
+const Registration = () => {
+    const [showPassword, setShowPassword] = useState(false);
+
+    
+    const togglePassword = () => {
+        setShowPassword(!showPassword);
+    };
+
+
+    return (
+        <>
+            <div className={Styled.mainDiv}>
+
+                <h1 className={Styled.title}>Qeydiyatdan keçin</h1>
+                <h2 className={Styled.subtitle}>Hesabınız var? Daxil olun </h2>
 
                 <Formik
                     initialValues={{ fullName: "", region: "", dateOfBirth: "", email: "", contact: "", password: "", }}
@@ -38,9 +52,9 @@ class Registration extends Component {
 
                         <div>
                             <Form
-                            className
+                                className
                             >
-                                <div>
+                                <div >
                                     <Field
                                         type="text"
                                         name="fullName"
@@ -50,7 +64,7 @@ class Registration extends Component {
                                     <ErrorMessage
                                         name="fullName"
                                         component="div"
-                                    //   className={Styled.emailError}
+                                        className={Styled.error}
                                     />
                                 </div>
                                 <div>
@@ -63,7 +77,7 @@ class Registration extends Component {
                                     <ErrorMessage
                                         name="region"
                                         component="div"
-                                    //   className={Styled.emailError}
+                                        className={Styled.error}
                                     />
                                 </div>
                                 <div>
@@ -76,7 +90,7 @@ class Registration extends Component {
                                     <ErrorMessage
                                         name="dateOfBirth"
                                         component="div"
-                                        className
+                                        className={Styled.error}
                                     />
                                 </div>
                                 <div>
@@ -89,7 +103,7 @@ class Registration extends Component {
                                     <ErrorMessage
                                         name="email"
                                         component="div"
-                                        className
+                                        className={Styled.error}
                                     />
                                 </div>
                                 <div>
@@ -102,20 +116,20 @@ class Registration extends Component {
                                     <ErrorMessage
                                         name="contact"
                                         component="div"
-                                        className
+                                        className={Styled.error}
                                     />
                                 </div>
 
                                 <div
-                                className
+                                    className
                                 >
-                                    {/* {showPassword ? (
-                <IoIosEyeOff className={Styled.icon} onClick={togglePassword} />
-            ) : (
-                <IoIosEye className={Styled.icon} onClick={togglePassword} />
-              )} */}
+                                    {showPassword ? (
+                                        <IoIosEyeOff className={Styled.icon} onClick={togglePassword} />
+                                    ) : (
+                                        <IoIosEye className={Styled.icon} onClick={togglePassword} />
+                                    )}
                                     <Field
-                                        type={"password"}
+                                        type={showPassword ? "text" : "password"}   
                                         name="password"
                                         placeholder="Şifrə"
                                         className={Styled.password}
@@ -124,7 +138,7 @@ class Registration extends Component {
                                 <ErrorMessage
                                     name="password"
                                     component="div"
-                                    className
+                                    className={Styled.password}
                                 />
                                 <button
                                     type="submit"
@@ -133,18 +147,36 @@ class Registration extends Component {
                                 >
                                     Daxil ol
                                 </button>
-
-
                             </Form>
 
                         </div>
                     )}
                 </Formik>
 
-            </>
+            </div>
+        </>
 
-        );
-    }
+    );
+
 }
 
+
 export default Registration;
+
+{/* <button onClick={gRegistration} className={Styled.google}>
+    <FcGoogle
+        size={25}
+        style={{ marginRight: "20px ", opacity: 2 }}
+    />
+    Google ilə davam edin
+</button> */}
+
+ // const gRegistration = useGoogleLogin({
+    //     onSuccess: (tokenResponse) => {
+    //         axios.get("https://www.googleapis.com/oauth2/v3/userinfo", {
+    //             headers: {
+    //                 Authorization: `Bearer ${tokenResponse}`,
+    //             },
+    //         });
+    //     },
+    // });

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+
 .email, .password, .fullName, .contact, .dateOfBirth, .region{
     border: 1.6px solid #12AFB6;
     color: #12AFB6;
@@ -42,4 +45,36 @@
 }
 .button:hover{
     transform: scale(1.01);
+}
+
+.error{
+    color: red;
+    font-weight: 500;
+}
+
+.title{
+    color: var(--primary-dark, #023436);
+    /* text-align: center; */
+    font-size: 40px;
+    font-family:Poppins;
+    font-weight: 600;
+}
+.subtitle{
+    color: var(--primary-dark, #023436);
+    text-align: center;
+    font-size: 24px;
+    font-family: Poppins;
+}
+
+.icon{
+    position: absolute;
+    /* right:10px */
+    left: 55.7%;
+    top:64.5%;
+    font-size: 25px;
+}
+
+.mainDiv{
+    margin-top:72px;
+    margin-right:250px;
 }

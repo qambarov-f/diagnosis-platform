@@ -12,7 +12,7 @@ import signPhoto from "../../../images/signin.svg";
 import spiral from "../../../images/shape4.svg"
 import circle from "../../../images/circle.svg";
 import circleSm from "../../../images/circle.svg";
-import styled from "styled-components";
+// import styled from "styled-components";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
