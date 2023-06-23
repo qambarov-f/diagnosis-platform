@@ -12,9 +12,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-
+{/* <Login /> */}
       {/* <Register />
-      <Login />
+      
       <MainPage /> */}
       {/* <Register /> */}
       <Registration/>

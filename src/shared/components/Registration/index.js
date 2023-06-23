@@ -66,7 +66,9 @@ const Registration = () => {
                                         component="div"
                                         className={Styled.error}
                                     />
+
                                 </div>
+
                                 <div>
                                     <Field
                                         type="text"
@@ -80,6 +82,7 @@ const Registration = () => {
                                         className={Styled.error}
                                     />
                                 </div>
+
                                 <div>
                                     <Field
                                         type="text"
@@ -93,6 +96,7 @@ const Registration = () => {
                                         className={Styled.error}
                                     />
                                 </div>
+
                                 <div>
                                     <Field
                                         type="email"
@@ -106,6 +110,7 @@ const Registration = () => {
                                         className={Styled.error}
                                     />
                                 </div>
+
                                 <div>
                                     <Field
                                         type="text"
@@ -138,8 +143,9 @@ const Registration = () => {
                                 <ErrorMessage
                                     name="password"
                                     component="div"
-                                    className={Styled.password}
+                                    className={Styled.error}
                                 />
+
                                 <button
                                     type="submit"
                                     disabled={isSubmitting}
