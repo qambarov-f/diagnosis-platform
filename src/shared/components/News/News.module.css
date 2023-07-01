@@ -1,0 +1,28 @@
+.cardContainer{
+    width: 320px;
+    /* overflow: hidden; */
+    border: none;
+
+}
+
+.imageContainer img{
+    border-radius: 15px;
+    overflow: hidden;
+    height: 200px;
+}
+.imageContainer{
+    transition: all ease-in-out 500ms;
+}
+.imageContainer:hover {
+    transform: scale(1.08);
+
+}
+
+
+.description{
+    text-align: left;
+    margin: 15px;
+    font-weight: 650;
+    font-size: 17px;
+    color: #023436;
+}

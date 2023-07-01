@@ -1,0 +1,111 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    position: relative;
+}
+
+.text{
+    color: #023436;
+    /* font-weight: 800; */
+    font-size: 40px;
+    text-align: justify;
+    font-family: "Poppins", "Regular";
+    margin-left: 170px;
+    font-size: bold;
+    font-weight: bold;
+}
+
+.image{
+    width: 325px;
+    height: 325px;
+    transform: scaleX(-1);
+    /* width: 440px; */
+    margin-right: 85px;
+}
+.textSecond{
+    text-align: right;
+    margin-top: 35px;
+    margin-right: 78px;
+    color: #035150;
+    font-family: "Poppins";
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.button {
+    width: 130px;
+    height: 50px;
+    border-radius: 15px;
+    border: 1px;
+    background-color: #12AFB6;
+    color: #fff;
+    margin-top: 25px;
+    margin-right: 200px;
+    transition: all ease-in-out 600ms;
+    font-size: 20px;
+    font-weight: 350;
+}
+.button:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transform: scale(1.1);
+}
+
+.spiral{
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    top: 150px;
+    left: 22px;
+
+}
+
+.circle{
+    width: 115px;
+    height: 115px;
+    right: 60px;
+    top: 120px;
+    position: absolute;
+    transition: all ease-in-out 1500ms;
+}
+
+.circle:hover{
+    transform: translate(-40px, 40px);
+}
+
+.circleLittle{
+    width: 60px;
+    height: 60px;
+    left: 580px;
+    bottom: 60px;
+    position: absolute;
+    transition: all ease-in-out 2000ms;
+}
+
+.circleLittle:hover{
+    transform: translateX(250px)
+}
+
+.atom{
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    right: 210px;
+    margin-top: 10px;
+    animation: rotation 6s infinite linear;
+    animation-play-state: paused;
+}
+
+.atom:hover {
+    animation-play-state: running;
+    
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
