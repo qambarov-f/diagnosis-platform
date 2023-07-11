@@ -1,22 +1,18 @@
 import React, { useState } from 'react';
-import { Container, Input, Label } from './CheckBox.styled';
+import { Container, Label } from './CheckBox.styled';
 import './styled.css'
 import { GrCheckbox, GrCheckboxSelected } from 'react-icons/gr';
 
 const CheckboxList = () => {
+  const [checkedItems, setCheckedItems] = useState([]);
 
-const [isChecked, setIsFirstIcon] = useState(true);
-const handleClick = () => {
-    setIsFirstIcon(!isChecked);
-}
-
-  // const [checkedItems, setCheckedItems] = useState({});
-  // const handleChange = (event) => {
-  //   setCheckedItems({
-  //     ...checkedItems,
-  //     [event.target.name]: event.target.checked,
-  //   });
-  // };
+  const handleChange = (itemId) => {
+    if (checkedItems.includes(itemId)) {
+      setCheckedItems(checkedItems.filter((item) => item !== itemId));
+    } else {
+      setCheckedItems([...checkedItems, itemId]);
+    }
+  };
 
   const checkboxData = [
     { id: 1, label: "Checkbox 1" },
@@ -31,28 +27,22 @@ const handleClick = () => {
   ];
 
   return (
-    <Container> 
+    <Container>
       {checkboxData.map((item) => (
-        
-        <Label onClick={handleClick}   key={item.id}>
-        
-        {isChecked? ( <GrCheckboxSelected key={item.id}  /> ) :  ( <GrCheckbox key={item.id} />) }
+        <Label
+          key={item.id}
+          onClick={() => handleChange(item.id)}
+        >
+          {checkedItems.includes(item.id) ? (
+            <GrCheckboxSelected />
+          ) : (
+            <GrCheckbox />
+          )}
           {item.label}
-
         </Label>
       ))}
     </Container>
   );
 };
-  
+
 export default CheckboxList;
-
-
-
-// {/* <Input
-//             type="checkbox"
-//             name={item.id}
-//             checked={checkedItems[item.id] || false}
-//             onChange={handleChange}
-//             className='checkbox'
-//           /> */}
