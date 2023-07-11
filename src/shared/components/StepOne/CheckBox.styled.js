@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
   position: relative;
   display: grid;
-  /* grid-templat-columns: repeat(3, 1fr); */
   margin: 50px 370px 20px 260px;
   border-radius: 4px;
   grid-template-columns: auto auto auto;
@@ -20,6 +19,7 @@ export const Label = styled.label`
   text-align: center;
   margin-left: 120px;
   font-family: "Poppins", sans-serif;
+  cursor: pointer;
 `;
 
 
@@ -29,3 +29,5 @@ export const Input = styled.input`
   background: none;
   margin-right: 15px;
 `;
+
+
