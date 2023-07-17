@@ -11,7 +11,7 @@ export const getQuestion = [
   },
   {
     id: 3,
-    question: "Su dəyəndə səpgi artır?",
+    question: "Su dəyəndə zaman tez-tez qaşınmalar olurmu və səpgi artırmı?",
     answers: ["Bəli", "Xeyr", "Bilmirəm"],
   },
 ];

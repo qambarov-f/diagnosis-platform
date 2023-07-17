@@ -10,10 +10,13 @@
     StepStyle,
     StepWrapper,
     StepsLabelContainer,
+    Title,
   } from "./Carousel.styled";
-import Questions from "../StepTwo";
   
-// import CheckboxList from "../StepOne";
+  // import CheckboxList from "../StepOne";
+  // import Questions from "../StepTwo";
+  // import StepThree from "../StepThree";
+  import Information from "../StepFour";
 
 
   // icons
@@ -61,6 +64,9 @@ import Questions from "../StepTwo";
     return (
       <>
         <MainContainer>
+          <Title>
+            Addımları tamamlayaraq xəstəiyinizin nə olduğunu öyrənin
+          </Title>
           <StepContainer width={width}>
             {steps.map(({ step, label }) => (
               <StepWrapper key={step}>
@@ -82,8 +88,9 @@ import Questions from "../StepTwo";
         </MainContainer>
 
         {/* <CheckboxList/> */}
-
-        <Questions />
+        {/* <Questions /> */}
+        {/* <StepThree/> */}
+        <Information />
 
         <ButtonsContainer>
           <ButtonStyle onClick={prevStep} disabled={activeStep === 1}>

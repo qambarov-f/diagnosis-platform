@@ -11,7 +11,7 @@ export const MainContainer = styled.div`
 export const StepContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-top: 70px;
+  margin-top: 60px;
   position: relative;
   :before {
     content: "";
@@ -123,4 +123,12 @@ export const CheckMark = styled.div`
   -ms-transform: scaleX(-1) rotate(-46deg); /* IE 9 */
   -webkit-transform: scaleX(-1) rotate(-46deg); /* Chrome, Safari, Opera */
   transform: scaleX(-1) rotate(-46deg);
+`;
+
+export const Title = styled.h3`
+  color: #023436;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 50px;
 `;

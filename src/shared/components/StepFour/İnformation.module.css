@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; 
+    margin-top: 55px;
+    width: 670px;
+    margin-left: 29%;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .title {
+    font-family: 'Poppins', sans-serif;
+    color: #023436;
+    font-weight: 700;
+    margin-left: 0;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.titleSc {
+    font-family: 'Poppins', sans-serif;
+    color: #023436;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.information {
+    margin-top: 60px;
+}
+.infoTitle {
+    font-family: 'Poppins', sans-serif;
+    color: #023436;
+    font-weight: 700;
+    text-align: start;
+    font-size: 19px;
+    
+}
+.paragraph {
+    text-align: start;
+    font-family: 'Poppins', sans-serif;
+    color: #023436;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.buttonsContainer {
+    background-color: #fff;
+    color: #023436;
+    width: 650px;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+
+.btnTitle{
+    background: none;
+    margin-top: 10px;
+}
+
+.buttons{
+    background-color: #fff;
+    margin: 5px 10px 15px 10px;
+    color: #12AFB6;
+    border: 2px solid #12AFB6;
+    border-radius: 10px;
+    width: 70px;
+    height: 35px;
+    font-weight: 600;
+}
+
