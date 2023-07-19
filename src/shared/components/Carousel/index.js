@@ -10,9 +10,14 @@
     StepStyle,
     StepWrapper,
     StepsLabelContainer,
+    Title,
   } from "./Carousel.styled";
   
-import CheckboxList from "../StepOne";
+  // import CheckboxList from "../StepOne";
+  // import Questions from "../StepTwo";
+  // import StepThree from "../StepThree";
+  import Information from "../StepFour";
+
 
   // icons
   // import { SlArrowLeft } from "react-icons/sl";
@@ -59,10 +64,15 @@ import CheckboxList from "../StepOne";
     return (
       <>
         <MainContainer>
+          <Title>
+            Addımları tamamlayaraq xəstəiyinizin nə olduğunu öyrənin
+          </Title>
           <StepContainer width={width}>
             {steps.map(({ step, label }) => (
               <StepWrapper key={step}>
-                <StepStyle step={activeStep >= step ? "completed" : "incomplete"}>
+                <StepStyle
+                  step={activeStep >= step ? "completed" : "incomplete"}
+                >
                   {activeStep > step ? (
                     <CheckMark>L</CheckMark>
                   ) : (
@@ -77,7 +87,10 @@ import CheckboxList from "../StepOne";
           </StepContainer>
         </MainContainer>
 
-                    <CheckboxList/>
+        {/* <CheckboxList/> */}
+        {/* <Questions /> */}
+        {/* <StepThree/> */}
+        <Information />
 
         <ButtonsContainer>
           <ButtonStyle onClick={prevStep} disabled={activeStep === 1}>

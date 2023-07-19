@@ -1,0 +1,28 @@
+.container {
+    margin-top: 50px    ;
+    display: flex;
+    flex-direction: column;
+}
+
+.button{
+    border-radius: 20px;
+    width: 300px;
+    padding: 0px 10px 0px 10px;
+}
+
+.severityLevel {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .line {
+    flex: 1;
+    height: 3px;
+    background-color: #12AFB6;
+    margin-right: 2px;
+  }
+  
+  .line:last-child {
+    margin-right: 0;
+  }
