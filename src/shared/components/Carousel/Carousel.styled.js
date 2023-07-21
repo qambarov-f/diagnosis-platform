@@ -97,8 +97,8 @@ export const ButtonStyle = styled.button`
   border-radius: 15px;
   margin: 15px;
   background: none;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 500;
   border: 1px solid #12afb6;
   background: ${(props) => (props.$primary ? "#12AFB6" : "none")};
   color: ${(props) => (props.$primary ? "white" : "#12AFB6")};
@@ -111,7 +111,7 @@ export const ButtonStyle = styled.button`
   :disabled {
     background: ${(props) => (props.$primary ? "#12AFB6" : "none")};
     color: ${(props) => (props.$primary ? "white" : "#12AFB6")};
-    cursor: not-allowed;
+    /* cursor: not-allowed; */
   }
 `;
 

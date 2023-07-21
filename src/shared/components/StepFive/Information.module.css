@@ -31,15 +31,8 @@
 }
 
 .information {
-    margin-top: 60px;
-}
-.infoTitle {
-    font-family: 'Poppins', sans-serif;
-    color: #023436;
-    font-weight: 700;
-    text-align: start;
-    font-size: 19px;
-    
+    margin-top: 10px;
+    margin-left: 10px;
 }
 .paragraph {
     text-align: start;
@@ -47,29 +40,5 @@
     color: #023436;
     font-weight: 500;
     margin-top: 15px;
-}
-
-.buttonsContainer {
-    background-color: #fff;
-    color: #023436;
-    width: 650px;
-    margin-top: 15px;
-    border-radius: 15px;
-}
-
-.btnTitle{
-    background: none;
-    margin-top: 10px;
-}
-
-.buttons{
-    background-color: #fff;
-    margin: 5px 10px 15px 10px;
-    color: #12AFB6;
-    border: 2px solid #12AFB6;
-    border-radius: 10px;
-    width: 70px;
-    height: 35px;
-    font-weight: 600;
 }
 
