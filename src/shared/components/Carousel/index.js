@@ -20,6 +20,8 @@ import StepThree from "../StepThree";
 import Information from "../StepFour";
 import Mualice from "../StepFive";
 
+import { useNavigate } from "react-router-dom";
+
 
 
 
@@ -64,18 +66,24 @@ const Carousel = () => {
   const renderStepComponent = () => {
     switch (activeStep) {
       case 1:
-        return <CheckboxList/> ;
+        return <CheckboxList />;
       case 2:
-        return <Questions /> ;
+        return <Questions />;
       case 3:
-        return <StepThree/>;
+        return <StepThree />;
       case 4:
-        return <Information /> ;
+        return <Information />;
       case 5:
         return <Mualice />;
       default:
         return null;
     }
+  };
+
+  const navigate = useNavigate();
+
+  const handleGoToHome = () => {
+    navigate("/");
   };
 
   return (
@@ -107,13 +115,27 @@ const Carousel = () => {
           Geri
         </ButtonStyle>
 
-        <ButtonStyle
+        {/* <ButtonStyle
           $primary
           onClick={nextStep}
           disabled={activeStep === totalSteps}
         >
           {activeStep !== totalSteps ? "İrəli" : "Ana Səhifə"}
-        </ButtonStyle>
+        </ButtonStyle> */}
+
+        {activeStep !== totalSteps ? (
+          <ButtonStyle
+            $primary
+            onClick={nextStep}
+            disabled={activeStep === totalSteps}
+          >
+            İrəli
+          </ButtonStyle>
+        ) : (
+          <ButtonStyle $primary onClick={handleGoToHome}>
+            Ana Səhifə
+          </ButtonStyle>
+        )}
       </ButtonsContainer>
     </>
   );

@@ -15,11 +15,19 @@ import Spiral from "../../../images/spiral.png";
 import Circle from "../../../images/circle.svg";
 import Atom from "../../../images/atom3d.svg";
 
+import { useNavigate } from "react-router-dom";
+
 
 const MainPage = () => {
 
   const news = getNews();
   // console.log("news", news);
+
+  const navigate = useNavigate();
+
+  const onStep = () => {
+    navigate("/steps");
+  };
 
   return (
     <>
@@ -33,7 +41,9 @@ const MainPage = () => {
           <h6 className={Style.textSecond}>
             Elə indi qeydiyyatdan keç və müalicəyə başla!
           </h6>
-          <button className={Style.button}>Başla</button>
+          <button onClick={onStep} className={Style.button}>
+            Başla
+          </button>
         </div>
         <img alt="#" src={mainImage} className={Style.image} />
       </div>
