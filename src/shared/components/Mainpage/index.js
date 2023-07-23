@@ -26,7 +26,7 @@ const MainPage = () => {
   const navigate = useNavigate();
 
   const onStep = () => {
-    navigate("/steps");
+    navigate("/giris");
   };
 
   return (

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { IoIosEye, IoIosEyeOff } from "react-icons/io";
 import Styled from "./Registration.module.css";
+import { useNavigate } from 'react-router-dom';
 // import { FcGoogle } from "react-icons/fc";
 // import { useGoogleLogin } from '@react-oauth/google';
 // import axios from "axios";
@@ -13,6 +14,9 @@ const Registration = () => {
     const togglePassword = () => {
         setShowPassword(!showPassword);
     };
+
+    const navigate = useNavigate();
+
 
 
     return (
@@ -45,6 +49,7 @@ const Registration = () => {
                         setTimeout(() => {
                             alert(JSON.stringify(values, null, 2));
                             setSubmitting(false);
+                            navigate("/daxil-olmaq");
                         }, 400);
                     }}
                 >

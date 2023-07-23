@@ -1,11 +1,11 @@
 import React, { Component, lazy } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 
-const MainPage = lazy(() => import("../shared/components/Mainpage/index"));
-const Carousel = lazy(() => import("../shared/components/Carousel/index"));
-// const Page404 = lazy(() => import("./404"));
-// const Contact = lazy(() => import("./contact"));
-// const Detailed = lazy(() => import("./detailed"));
+const MainPage = lazy(() => import("../shared/components/Mainpage"));
+const Carousel = lazy(() => import("../shared/components/Carousel"));
+const Register = lazy(() => import("../shared/components/Register"));
+const Login = lazy(() => import("../shared/components/Login"));
+const Registration = lazy(() => import("../shared/components/Registration"));
 const Layout = lazy(() => import("../shared/components/layout/index"));
 
 class RootPage extends Component {
@@ -20,8 +20,9 @@ class RootPage extends Component {
           {/* <Route path="/movie" element={<Navigate to="/home" replace />} /> */}
 
           <Route path="/steps" element={<Carousel />} />
-          {/* <Route path="/contact" element={<Contact />} /> */}
-          {/* <Route path="*" element={<Page404 />} /> */}
+          <Route path="/giris" element={<Register />} />
+          <Route path="/daxil-olmaq" element={<Login />} />
+          <Route path="/qeydiyyat" element={<Registration />} />
         </Routes>
       </Layout>
     );

@@ -5,6 +5,7 @@ import { IoIosEye, IoIosEyeOff } from "react-icons/io";
 import { FcGoogle } from "react-icons/fc";
 import { useGoogleLogin } from '@react-oauth/google';
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 // images
 import atom from "../../../images/atom3d.svg";
@@ -31,6 +32,10 @@ const Login = () => {
     },
   });
 
+  const navigate = useNavigate();
+
+
+
   return (
     <Formik
       initialValues={{ email: "", password: "" }}
@@ -51,6 +56,7 @@ const Login = () => {
         setTimeout(() => {
           alert(JSON.stringify(values, null, 2));
           setSubmitting(false);
+          navigate("/home");
         }, 400);
       }}
     >
