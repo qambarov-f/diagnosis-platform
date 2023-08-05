@@ -41,5 +41,6 @@
     color: #023436;
     text-decoration: none;
     margin-left: 60px;
+    cursor: pointer;
 }
 /* .navbar a:hover {} */

@@ -7,7 +7,7 @@ import Donate from "../../../images/donate3d.svg";
 
 const About = () => {
   return (
-    <div className={Style.container}>
+    <div id="haqqimizda" className={Style.container}>
       <img alt="#" src={AboutImg} className={Style.aboutImage} />
       <div className={Style.textContainer}>
         <h3 className={Style.title}>Haqqımızda</h3>

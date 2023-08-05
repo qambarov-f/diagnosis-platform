@@ -2,8 +2,7 @@
 //icons
 import  { ImPhone } from "react-icons/im"
 import { HiMail } from "react-icons/hi";
-import { AiFillInstagram } from "react-icons/ai"
-import { BsFacebook } from "react-icons/bs";
+import { AiFillInstagram } from "react-icons/ai";
 import { FaTiktok } from "react-icons/fa";
 
 
@@ -18,6 +17,17 @@ import Img from "../../../images/shape4.svg";
 
 
 const Contact = ()=> {
+
+  const handleInstaClick = () => {
+    
+    window.location.href = 'https://instagram.com/diagnosiss_pre?igshid=MzNlNGNkZWQ4Mg==';
+  };
+  const handleTikTokClick = () => {
+    
+    window.location.href =
+      "https://www.tiktok.com/@prediagnosis?_t=8eFXu7Y0C8o&_r=1";
+  };
+
   return (
     <div className={Style.mainContainer}>
       <img alt="circle" src={circle} className={Style.circle} />
@@ -34,9 +44,11 @@ const Contact = ()=> {
           </span>
 
           <div className={Style.socialMedia}>
-            <AiFillInstagram className={Style.instagram} />
-            <BsFacebook className={Style.facebook} />
-            <FaTiktok className={Style.tiktok} />
+            <AiFillInstagram
+              className={Style.instagram}
+              onClick={handleInstaClick}
+            />
+            <FaTiktok className={Style.tiktok} onClick={handleTikTokClick} />
           </div>
         </div>
         <img alt="contact" src={contact} className={Style.contactImage} />

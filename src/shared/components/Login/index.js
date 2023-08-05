@@ -5,7 +5,7 @@ import { IoIosEye, IoIosEyeOff } from "react-icons/io";
 import { FcGoogle } from "react-icons/fc";
 import { useGoogleLogin } from '@react-oauth/google';
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 // images
 import atom from "../../../images/atom3d.svg";
@@ -67,9 +67,9 @@ const Login = () => {
             <h4 className={Styled.titlesm}>
               {" "}
               Yeni hesab lazımdır?{" "}
-              <a href="/home" className={Styled.href}>
+              <Link to="/qeydiyyat" className={Styled.href}>
                 Qeydiyyatdan keçin
-              </a>
+              </Link>
             </h4>{" "}
             <Field
               type="email"
@@ -108,9 +108,9 @@ const Login = () => {
             >
               Daxil ol
             </button>
-            <a href="/password" className={Styled.forget}>
+            <Link to="/sifreni-yenile" className={Styled.forget}>
               Şifrənizi unutmusunuz?
-            </a>
+            </Link>
             <h6 className={Styled.hSix}>və ya</h6>
             <button onClick={login} className={Styled.google}>
               <FcGoogle

@@ -2,9 +2,17 @@ import React from 'react'
 import Logo from "../../../images/mainlogo.svg";
 import Style from "./Header.module.css";
 import { Link, useNavigate } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+
 
 const Header = () => {
  
+  const phoneNumber = '+994553281949';
+
+  const handleCall = () => {
+    window.location.href = `tel:${phoneNumber}`;
+  };
+
   const navigate = useNavigate(); 
 
   return (
@@ -16,10 +24,28 @@ const Header = () => {
       <Link to="/home" className="nav-link">
         Ana Səhifə
       </Link>
-      <a href="about">Haqqımızda</a>
-      <a href="news">Xəbərlər</a>
+      <ScrollLink
+        to="haqqimizda"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={300}
+      >
+        Haqqımızda
+      </ScrollLink>
+      <ScrollLink
+        to="xeberler"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={300}
+      >
+        Xəbərlər
+      </ScrollLink>
 
-      <button className={Style.contact}>Əlaqə</button>
+      <button className={Style.contact} onClick={handleCall}>
+        Əlaqə
+      </button>
     </div>
   );
 }

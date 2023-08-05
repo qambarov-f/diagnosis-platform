@@ -24,7 +24,8 @@
     align-items: center;
     font-size: 55px;
     margin-top: 15px;
-    margin-right: 120px;
+    margin-right: 130px;
+    cursor: pointer;
 }
 
 .instagram{
@@ -37,21 +38,11 @@
     transform: scale(1.19);
 }
 
-.facebook{
-    transition: all ease-in-out 500ms;
-    font-size: 50px;
-    margin-right: 25px;
-}
-
-.facebook:hover{
-    transform: scale(1.19);
-    
-}
 
 .tiktok{
     transition: all ease-in-out 500ms;
     font-size: 50px;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 .tiktok:hover {
@@ -85,11 +76,12 @@
     font-size: 25px;
     margin-top: 10px;
     font-weight: 700;
+    margin-left: 8px;
 }
 
 .phoneIcon{
     font-size: 40px;
-    margin-right: 28px;
+    margin-right: 25px;
 }
 
 .gmail{

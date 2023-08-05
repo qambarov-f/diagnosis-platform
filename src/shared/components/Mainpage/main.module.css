@@ -11,7 +11,7 @@
     /* font-weight: 800; */
     font-size: 40px;
     text-align: justify;
-    font-family: "Poppins", "Regular";
+    font-family: 'Poppins', sans-serif;
     margin-left: 170px;
     font-size: bold;
     font-weight: bold;
@@ -27,9 +27,9 @@
 .textSecond{
     text-align: right;
     margin-top: 35px;
-    margin-right: 78px;
+    margin-right: 93px;
     color: #035150;
-    font-family: "Poppins";
+    font-family: 'Poppins', sans-serif;
     font-size: 22px;
     font-weight: 300;
 }
@@ -42,7 +42,7 @@
     background-color: #12AFB6;
     color: #fff;
     margin-top: 25px;
-    margin-right: 200px;
+    margin-right: 250px;
     transition: all ease-in-out 600ms;
     font-size: 20px;
     font-weight: 350;

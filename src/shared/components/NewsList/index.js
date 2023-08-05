@@ -46,7 +46,7 @@ const NewsList = (props) => {
 
   return (
     <>
-      <div className={Style.container}>
+      <div id="xeberler" className={Style.container}>
         <h2 className={Style.title}>Ən son yeniliklər</h2>
         <div className={Style.newsContainer}>
           {visibleData.map((item) => (

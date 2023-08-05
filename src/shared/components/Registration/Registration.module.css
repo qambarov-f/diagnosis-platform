@@ -1,21 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
 
-.email, .password, .fullName, .contact, .dateOfBirth, .region{
-    border: 1.6px solid #12AFB6;
+.formik{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.email,
+.password,
+.fullName,
+.contact,
+.dateOfBirth,
+.region {
+    border: 1.3px solid #12AFB6;
     color: #12AFB6;
     margin: 5px;
     border-radius: 10px;
-    width: 300px;
-    height: 30px;
-    padding: 15px;
-    background-color: #C9E8EB;
-    margin-top: 10px;
-}
-.email::placeholder, .fullName::placeholder , .contact::placeholder, .region::placeholder, .dateOfBirth::placeholder{
-    color: #12AFB6;
+    width: 380px;
+    height: 45px;
     font-size: 15px;
-    background-color: #C9E8EB;
+    padding: 15px;
+}
+    .email::placeholder, .fullName::placeholder , .contact::placeholder, .region::placeholder, .dateOfBirth::placeholder{
+        color: #12AFB6;
+        font-size: 15px;
+        background-color: #C9E8EB;
     
 }
 .email:focus {
@@ -25,10 +36,23 @@
 }
 
 
-.password::placeholder  {
+.password::placeholder {
     color: #12AFB6;
 }
 
+.wrapper{
+    position: relative;
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+.icon{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    font-size: 23px;
+    transform: translateY(-50%);
+    color: #12AFB6;
+}
 
 .button {
     border: none;
@@ -36,7 +60,7 @@
     background-color: #12AFB6;
     margin-top: 17px;
     border-radius: 10px;
-    width: 320px;
+    width: 380px;
     height: 50px;
     font-size: 20px;
     text-align: center;
@@ -56,25 +80,82 @@
     color: var(--primary-dark, #023436);
     /* text-align: center; */
     font-size: 30px;
-    font-family:Poppins;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
 .subtitle{
     color: var(--primary-dark, #023436);
     text-align: center;
     font-size: 16px;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 }
 
-.icon{
-    position: absolute;
-    /* right:10px */
-    left: 55.7%;
-    top:64.5%;
-    font-size: 25px;
-}
 
+    .icon {
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        font-size: 23px;
+        transform: translateY(-50%);
+        color: #12AFB6;
+      }
+    
 .mainDiv{
     margin-top:10px;
     margin-right:250px;
+}
+
+.hSix{
+    color: #BCBFBF;
+    margin-top: 20px;
+    font-size: 15px;
+    position: relative;
+}
+.hSix::before{
+    content: "";
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: #BCBFBF;
+    left: 45px;
+    top: 55%;
+    position: absolute;
+    border: 0.5px solid;
+}
+
+.hSix::after {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: #BCBFBF;
+    right: 45px;
+    top: 55%;
+    position: absolute;
+    border: 0.5px solid;
+}
+
+
+.google{
+    border: 1.6px solid #12AFB6;
+    color: #023436;
+    opacity: 0.7;
+    border-radius: 10px;
+    width: 320px;
+    height: 50px;
+    background-color: #C9E8EB;
+    margin-top: 25px;
+    padding-right: 30px;
+    font-size: 18px;
+    font-weight: 650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login{
+    text-decoration: none;
+    color: #12AFB6;
+    margin-left: 5px;
 }

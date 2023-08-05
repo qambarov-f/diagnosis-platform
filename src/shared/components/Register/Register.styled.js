@@ -31,19 +31,19 @@ export const Image = styled.img`
 
 export const Title = styled.h4`
   font-family: "Poppins", sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 29px;
   line-height: 60px;
   color: #023436;
+  margin-top: 10px;
 `;
 
 export const Title2 = styled.h6`
-  font-family: "Inter";
-  font-style: normal;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 19px;
   line-height: 29px;
+  margin-top: -10px;
 `;
 export const ImageCrc = styled.img`
   position: absolute;
