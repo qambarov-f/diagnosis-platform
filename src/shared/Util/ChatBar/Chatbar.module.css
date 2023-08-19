@@ -1,0 +1,27 @@
+.chatBar {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+  font-size: 30px;
+  background: none;
+  /* transition: ease-in-out 1500s; */
+  }
+  .icon{
+    background: none;
+    font-size: 37px;
+  }
+  .chatIcon {
+    background-color: #12AFB6;
+    color: white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+    

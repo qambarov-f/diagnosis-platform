@@ -26,6 +26,7 @@ const Mualice = () => {
             laudantium, to Nemo enim ipsam voluptatem quia voluptas sit
             aspernatur aut odit aut fugit, sed quia consequuntur ma.
           </p>
+
           <p className={Style.paragraph}>
             2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis
@@ -38,6 +39,7 @@ const Mualice = () => {
             voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
             consequuntur ma.
           </p>
+  
         </div>
       </div>
     </div>

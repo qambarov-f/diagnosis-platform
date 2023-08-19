@@ -16,6 +16,7 @@ import Circle from "../../../images/circle.svg";
 import Atom from "../../../images/atom3d.svg";
 
 import { useNavigate } from "react-router-dom";
+import ChatBar from "../../Util/ChatBar";
 
 
 const MainPage = () => {
@@ -55,6 +56,7 @@ const MainPage = () => {
       <About />
       <NewsList data={news} />
       <Contact />
+      <ChatBar />
     </>
   );
 };
